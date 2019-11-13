@@ -17,7 +17,7 @@ pip install -r  requirements.txt
 
 #### Run  
 
-#### I just want to poke what is already done!
+##### I just want to poke what is already done!
 Go for it:
 1) Queue -  https://console.cloud.google.com/cloudtasks/queue/my-queue?project=revolut-ds&organizationId=367080375030
 2) Endpoint that will create a task in queue - https://art-test-two-dot-revolut-ds.appspot.com/add_task_app_engine
@@ -29,6 +29,7 @@ and see that request was passed through queue and into the bin-bucket:
 https://requestbin.com/r/enfi2o6y5sm0g/
 
 
+#### DIY
 
 ##### web application:  
 activate your virtual environment  
