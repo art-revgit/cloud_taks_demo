@@ -1,4 +1,4 @@
-#  Simple example on how to use Google Cloud Tasks to do async api with  
+#  Simple example async API with Google Cloud Tasks and App Engine
 
 ###  Usage:  
 
