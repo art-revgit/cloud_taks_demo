@@ -2,10 +2,9 @@ from google.auth.transport.requests import AuthorizedSession
 from google.oauth2 import service_account
 import os
 
-# target_audience = "art-test-service@revolut-ds.iam.gserviceaccount.com"
+# GOOGLE_APPLICATION_CREDENTIALS - /path/to/serviceaccountcreds.json
 creds = service_account.IDTokenCredentials.from_service_account_file(
-    "/Users/artsiomyancheuski/Python/testgcauth/art-test-service.json",
-    target_audience=os.environ["TARGET_AUDIENCE"],
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"], target_audience=os.environ["TARGET_AUDIENCE"]
 )
 authed_session = AuthorizedSession(creds)
 response = authed_session.get(
