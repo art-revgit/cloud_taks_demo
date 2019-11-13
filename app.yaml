@@ -1,2 +1,5 @@
 runtime: python37
 service: art-test-two
+
+env_variables:
+  some_secret: some_secret_placeholder_to_be_replaced_by_ci
