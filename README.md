@@ -16,7 +16,20 @@ remember to activate your python virtual environment of preference (e.g. pipenv 
 pip install -r  requirements.txt   
 
 #### Run  
-  
+
+#### I just want to poke what is already done!
+Go for it:
+1) Queue -  https://console.cloud.google.com/cloudtasks/queue/my-queue?project=revolut-ds&organizationId=367080375030
+2) Endpoint that will create a task in queue - https://art-test-two-dot-revolut-ds.appspot.com/add_task_app_engine
+3) Logs of the queue:
+https://console.cloud.google.com/logs/viewer?project=revolut-ds&minLogLevel=0&expandAll=false&timestamp=2019-11-13T10:00:56.458000000Z&customFacets=&limitCustomFacetWidth=true&dateRangeStart=2019-11-13T09:00:56.713Z&dateRangeEnd=2019-11-13T10:00:56.713Z&interval=PT1H&resource=cloud_tasks_queue
+4) You can call the external task endpoint:
+https://art-test-two-dot-revolut-ds.appspot.com/add_task_external
+and see that request was passed through queue and into the bin-bucket:
+https://requestbin.com/r/enfi2o6y5sm0g/
+
+
+
 ##### web application:  
 activate your virtual environment  
 export GOOGLE_APPLICATION_CREDENTIALS=/pass/to/service_accounts_creds.json  
